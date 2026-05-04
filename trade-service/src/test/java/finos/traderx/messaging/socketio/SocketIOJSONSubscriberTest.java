@@ -176,7 +176,7 @@ class SocketIOJSONSubscriberTest {
             sub.connect();
             sub.unsubscribe("/trades");
 
-            verify(mockSocket).emit("unsubscribe", "topic");
+            verify(mockSocket).emit("unsubscribe", "/trades");
         }
     }
 
