@@ -71,7 +71,7 @@ public abstract class SocketIOJSONSubscriber<T> implements Subscriber<T>, Initia
 
     @Override
     public void unsubscribe(String topic) throws PubSubException {
-        socket.emit("unsubscribe", "topic");
+        socket.emit("unsubscribe", topic);
     }
 
     @Override
